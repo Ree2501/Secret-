@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Library</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../CSSSS/cssboot/bootstrap.min.css">
+          <link rel="stylesheet" href="../CSSSS/css/all.min.css" >
+              <link rel="stylesheet" href="../CSSSS/style.css">
+
+</head>
+<body>
+ 
+    <header>
+   
+   <nav>
+    
+    <a href="about.html"  > about</a>
+    <a href="Books.html"> <i class="fa-solid fa-book"></i>Books</a>
+    <a href="membership.html"> <i class="fa-regular fa-user"></i> membership</a>
+    <a href="contact.html"> contact</a>
+   
+   </nav>
+    <!--   <div id="spansrch">
+    <button id="serch" onclick="search()">بحث</button>
+     <input dir="rtl" type="text" id="searchInput" placeholder="اكتب النص هنا">-->
+
+</div>
+   </header>
+
+<script>
+function search() {
+  const value = document.getElementById('searchInput').value;
+  if(value.trim() !== "") {
+    console.log("أنت تبحث عن:", value); // ممكن تغيره لأي وظيفة تبحث النص
+  } else {
+    alert("رجاءً اكتب شيئًا أولاً");
+  }
+}
+</script>
+
+   <section>
+   <br> <br>
+<h1> 🔮✨المكتبة السرّية</h1>
+<br> <br>
+<p dir="rtl" >أهلاً بك في عالم يختبئ خلف الكلمات، حيث تختلط الحقيقة بالوهم، والغموض بالمعرفة. هنا ستجد كتباً نادرة، قصصاً محظورة، وأسراراً لم تُكشف من قبل.</p>
+<a href="books.html" style="color: rgb(192, 145, 80) " >ابدأ الاستكشاف</a>
+    </section>
+   
+ <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+ 
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../imge/sl.jpg" class="d-block w-100" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="../imge/sr.jpg" class="d-block w-100" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="../imge/sc.jpg" class="d-block w-100" alt="Slide 3">
+    </div>
+  </div>
+<div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   <br> <br><br> <br> <br> <br> <br> <br><br>
+   <footer>&copy 2025 Secret Library.</footer> 
+
+    
+
+
+
+
+    
+
+ <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

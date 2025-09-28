@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>membership</title>
+    <link rel="stylesheet"  href="../CSSSS/sweetalert2.min.css">
+       <link rel="stylesheet" href="../CSSSS/cssboot/bootstrap.min.css">
+      <link rel="stylesheet" href="../CSSSS/style.css">
+        <link rel="stylesheet" href="../CSSSS/css/all.min.css" >
+       
+</head>
+<body>
+  <header>
+     <nav>
+     
+   <a href="index.html"> <i class="fa-regular fa-house "></i>Home</a>
+    <a href="about.html"> about</a>
+    <a href="Books.html"> Books</a>
+    <a href="contact.html"> contact</a>
+    
+    </nav>
+  </header>
+  <section>
+
+ <div class="login">
+  <fieldset><legend>LOGIN</legend>
+<form class="needs-validation" novalidate>
+  <div class="mb-3">
+    <label for="email" class="form-label"> Email </label>
+    <input type="email" class="form-control" id="email" required>
+    <div class="invalid-feedback">رجاءً أدخل بريد صحيح</div>
+  </div>
+  <div class="mb-3">
+    <label for="password" class="form-label">Password </label>
+    <input type="password" class="form-control" id="password" required>
+    <div class="invalid-feedback">كلمة المرور مطلوبة</div>
+  </div>
+  <button class="btn btn-primary" type="submit" id="open">Enter</button>
+</form>
+
+<script>
+// تشغيل التحقق
+(() => {
+  'use strict';
+  const forms = document.querySelectorAll('.needs-validation');
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    }, false);
+  });
+})();
+</script>
+</fieldset>
+ 
+  
+  </section>
+
+
+  
+
+
+
+<script>
+  function showAlert() {
+    Swal.fire({
+      title:"Good job!",
+      text: "You have successfully logged in!",
+      icon: 'success',
+      confirmButtonText: "Close"
+    });
+  }
+</script>
+ 
+
+<script src="../JSS/sweetalert2.min (1).js"></script>
+
+ 
+<button  id="open" onclick="showAlert()">التحقق</button>
+ <script src="../JSS/bootstrap.bundle.min.js"></script>
+<script src="../JSS/sweetalert2.min (1).js"></script>
+</body>
+</html>
